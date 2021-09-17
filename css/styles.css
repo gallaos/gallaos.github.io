@@ -104,8 +104,8 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Libre Caslon Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  line-height: 1.2;
+  font-weight: 100;
+  line-height: 1.1;
 }
 
 h1, .h1 {
@@ -644,12 +644,10 @@ progress {
     max-width: 100%;
     height: auto;
   }
-
   .img-fluid-viden-na, .img-fluid-viden-na-sm {
     max-width: 50%;
     height: auto;
   }
-  
 }
 
 
@@ -1209,6 +1207,12 @@ progress {
   .col-md-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
+  }
+  @media (max-width: 985px) {
+    .col-md-2 {
+      flex: 0 0 auto;
+      width: 25%;
+    }
   }
 
   .col-md-3 {
@@ -3256,49 +3260,49 @@ textarea.form-control-lg {
 }
 
 .btn-light {
-  color: #000;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #fff;
+  background-color: #c49977;
+  border-color: #b48b6b;
 }
 .btn-light:hover {
-  color: #000;
-  background-color: #f9fafb;
-  border-color: #f9fafb;
+  color: #fff;
+  background-color: #b48b6b;
+  border-color: #a77e5f;
 }
 .btn-check:focus + .btn-light, .btn-light:focus {
-  color: #000;
-  background-color: #f9fafb;
-  border-color: #f9fafb;
+  color: #fff;
+  background-color: #b48b6b;
+  border-color: #a77e5f;
   box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
 }
 .btn-check:checked + .btn-light, .btn-check:active + .btn-light, .btn-light:active, .btn-light.active, .show > .btn-light.dropdown-toggle {
-  color: #000;
-  background-color: #f9fafb;
-  border-color: #f9fafb;
+  color: #fff;
+  background-color: #b48b6b;
+  border-color: #a77e5f;
 }
 .btn-check:checked + .btn-light:focus, .btn-check:active + .btn-light:focus, .btn-light:active:focus, .btn-light.active:focus, .show > .btn-light.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
 }
 .btn-light:disabled, .btn-light.disabled {
-  color: #000;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #fff;
+  background-color: #c49977;
+  border-color: #b48b6b;
 }
 
 .btn-dark {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #9d6c52;
+  border-color: #916249;
 }
 .btn-dark:hover {
   color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
+  background-color: #916249;
+  border-color: #85583f;
 }
 .btn-check:focus + .btn-dark, .btn-dark:focus {
   color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
+  background-color: #9d6c52;
+  border-color: #916249;
   box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
 }
 .btn-check:checked + .btn-dark, .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active, .show > .btn-dark.dropdown-toggle {
@@ -3466,27 +3470,27 @@ textarea.form-control-lg {
 }
 
 .btn-outline-light {
-  color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #9d6c52;
+  border-color: #c49977;
 }
 .btn-outline-light:hover {
-  color: #000;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #fff;
+  background-color: #c49977;
+  border-color: #c49977;
 }
 .btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
   box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
 }
 .btn-check:checked + .btn-outline-light, .btn-check:active + .btn-outline-light, .btn-outline-light:active, .btn-outline-light.active, .btn-outline-light.dropdown-toggle.show {
-  color: #000;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #fff;
+  background-color: #c49977;
+  border-color: #c49977;
 }
 .btn-check:checked + .btn-outline-light:focus, .btn-check:active + .btn-outline-light:focus, .btn-outline-light:active:focus, .btn-outline-light.active:focus, .btn-outline-light.dropdown-toggle.show:focus {
   box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
 }
 .btn-outline-light:disabled, .btn-outline-light.disabled {
-  color: #f8f9fa;
+  color: #9d6c52;
   background-color: transparent;
 }
 
@@ -11375,7 +11379,7 @@ html {
 }
 
 .bg-gradient-primary-to-secondary {
-  background: linear-gradient(45deg, #9d6c52, #c49977) !important;
+  background: #9d6c52 !important;
 }
 
 .font-alt {
@@ -11677,38 +11681,33 @@ ul.social-network li {
 }
 
 .social-network a.icoFacebook {
-	background-color:#3B5998;
+	background-color:#c49977;
 }
 .social-network a.icoInsta {
-	background-color:#8a3ab9;
+	background-color:#c49977;
 }
 .social-network a.icoYoutube {
-	background-color:#FF0000;
+	background-color:#c49977;
 }
 .social-network a.icoVimeo {
-	background-color:#0590B8;
-}
-.social-network a.icoLinkedin {
-	background-color:#007bb7;
+	background-color:#c49977;
 }
 
 .social-network a.icoFacebook:hover {
-	background-color:#324a7e;
+	background-color:#b68a69;
 }
 .social-network a.icoInsta:hover {
-	background-color:#7934a1;
+	background-color:#b68a69;
 }
 .social-network a.icoYoutube:hover {
-	background-color:#e00202;
+	background-color:#b68a69;
 }
 .social-network a.icoVimeo:hover {
-	background-color:#057c9c;
+	background-color:#b68a69;
 }
-.social-network a.icoLinkedin:hover {
-	background-color:#016699;
-}
+
 .social-network a.icoFacebook:hover i, .social-network a.icoInsta:hover i,
-.social-network a.icoYoutube:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+.social-network a.icoYoutube:hover i, .social-network a.icoVimeo:hover i {
 	color:#fff;
 }
 a.socialIcon:hover, .socialHoverClass {
@@ -11720,34 +11719,84 @@ a.socialIcon:hover, .socialHoverClass {
 	position:relative;
 	margin:0 auto 0 auto;
 	text-align:center;
-	width: 50px;
-	height: 50px;
-	font-size:20px;
-	/* background-color: #D3D3D3; */
+	width: 70px;
+	height: 70px;
+	font-size:50px;
 }
 .social-circle li i {
 	margin:0;
-	line-height:50px;
+	line-height:70px;
 	text-align: center;
 }
-
-.social-circle li a:hover i, .triggeredHover {
-	-moz-transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-ms--transform: rotate(360deg);
-	transform: rotate(360deg);
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-o-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	transition: all 0.2s;  
+@media (max-width: 768px) {
+  .social-circle li a {
+    width: 55px;
+    height: 55px;
+    font-size:37px;
+  }
+  .social-circle li i {
+    line-height:55px;
+  }
 }
-
 .social-circle i {
 	color: #fff;
-	-webkit-transition: all 0.8s;
-	-moz-transition: all 0.8s;
-	-o-transition: all 0.8s;
-	-ms-transition: all 0.8s;
-	transition: all 0.8s;
 }
+
+/* Socials animation */
+.mySlides {display: none; text-align: center !important;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 1px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.img-fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Hide logic vidna na */
+
+.vn-des-hide{
+  display: none;
+}
+
+  @media (max-width: 768px) {
+    .vn-mob-hide{
+      display: none;
+    }
+    .vn-des-hide{
+      display:block;
+    }
+  }
+
