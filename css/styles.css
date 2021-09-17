@@ -504,7 +504,7 @@ progress {
 }
 @media (max-width: 768px) {
   .display-1 {
-    font-size: 35px;
+    font-size: 45px;
   }
 }
 
@@ -7574,6 +7574,12 @@ textarea.form-control-lg {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
 }
+@media only screen and (max-width: 768px) {
+  .py-5 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+}
 
 .pt-0 {
   padding-top: 0 !important;
@@ -7922,6 +7928,10 @@ textarea.form-control-lg {
 .bg-light {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-skin {
+  background-color: rgba(194, 166, 147, 1) !important;
 }
 
 .bg-dark {
@@ -11395,7 +11405,7 @@ html {
 
 aside,
 section {
-  padding-top: 5rem;
+  padding-top: 4rem;
   padding-bottom: 5rem;
 }
 
@@ -11800,3 +11810,10 @@ a.socialIcon:hover, .socialHoverClass {
     }
   }
 
+  /* Make thiner arrows on buttons */
+  .thiner-s1{
+    -webkit-text-stroke: 0.4px #9d6c52;
+  }
+  .thiner-s2{
+    -webkit-text-stroke: 1px #c49977;
+  }
